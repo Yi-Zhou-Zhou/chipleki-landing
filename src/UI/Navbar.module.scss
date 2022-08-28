@@ -1,0 +1,16 @@
+.navbar{
+    min-height: 8.5vh;
+    position: sticky;   
+    width: 100%;
+    padding: 0.5rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-between;
+    width: 50%;
+}
