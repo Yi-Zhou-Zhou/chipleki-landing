@@ -1,0 +1,68 @@
+@import "./../styles/variables.scss";
+
+.functionalities{
+    padding: 1.2rem 3rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", "sans-serif";
+    &__section{
+        display: flex;
+       flex-wrap: wrap-reverse;
+        gap: 1rem;
+        border-bottom: 2px solid black;
+        @include breakpoint(md){
+            gap: 0;
+        }
+        
+        &:nth-child(2){
+            flex-wrap: wrap;
+        }
+        &:nth-child(3){
+            border: none;
+        }
+       &__description{
+        margin-top: 2rem;
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        gap: 2rem;
+        @include breakpoint(md){
+            margin-top:0;
+        }
+        &__title{
+            
+            font-size: 28px;
+            text-align: center;
+            @include breakpoint(md){
+                text-align: start;
+                font-size: 42px;
+            }
+            
+        }
+        &__info{
+            font-size: 18px;
+            text-align: justify;
+        }
+        @include breakpoint(md){
+            width: 50%;
+            font-size: 20px;
+        }
+
+
+       }
+
+       &__icon{
+        &__image{
+            width: 100%;
+        }
+        @include breakpoint(md){
+            width: 50%;
+            height: auto;
+            
+        }   
+       }
+    }
+}

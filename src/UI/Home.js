@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from "./Home.module.scss"
 import background from "../imgs/background2.png"
+import Section from './Section'
+import Functionalities from './Functionalities'
+import Footer from './Footer'
 const Home = () => {
   return (
     <main className={styles.ab}>
@@ -15,7 +18,9 @@ const Home = () => {
             </img>
           </div>
         </div>
-
+        <Section/>
+        <Functionalities/>
+        <Footer/>
     </main>
 
   )

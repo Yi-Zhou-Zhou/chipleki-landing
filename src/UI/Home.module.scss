@@ -6,13 +6,14 @@
     top: $header-height;
 }
 .main{
+
     overflow:hidden;
     display: flex;
     justify-content: center;
-    
     flex-wrap: wrap-reverse;
     width: 100%;
     gap: 0;
+    margin-bottom: 2rem;
 
     @include breakpoint(md){
         
@@ -22,6 +23,7 @@
         }
     }
     &__bg{ 
+        
         @include breakpoint(md){
             width: 60%;
             text-align: center;
@@ -29,9 +31,11 @@
         }
         &__img{
             width: 120%;
+            max-width: 768px;
             height: auto;
         @include breakpoint(md){
             width: 100%;
+            max-width: 1024px;
         }
           
         }
@@ -41,38 +45,47 @@
 
         @include breakpoint(md){
             margin-top: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
+
         margin: 0 auto;
         padding: 0 1rem;
-        text-align: center;
+        
         
 
         h1{
             @include breakpoint(md){
                 font-size: 48px;
                 margin-bottom: 3.3rem;
+                
 
             }
+            text-align: start;
             font-size: 28px;
             margin-bottom: 2.3rem;
-            font-family: "Lato", "sans-serif";
+            font-family: "Montserrat", "sans-serif";
             text-shadow: 3px 3px 2px rgba(150, 152, 155, 1);
         }
 
         h2{
             @include breakpoint(md){
                 font-size: 24px;
+                
                 margin-bottom: 3.3rem;
 
             }
+            text-align: justify;
             font-size: 18px;
             margin-bottom: 2.3rem;
-            font-family: "Lato", "sans-serif"
+            font-family: "Montserrat", "sans-serif"
         }
 
         button{
             @include breakpoint(md){
                 font-size: 18px;
+                align-self: flex-start;
             }
             border: none;
             background-color: #062c3f;
