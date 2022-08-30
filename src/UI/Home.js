@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from "./Home.module.scss"
-import background from "../imgs/background.jpg"
+import background from "../imgs/background2.png"
 const Home = () => {
   return (
-    <main>
+    <main className={styles.ab}>
         <div className={styles.main}>
           <div className={styles.main__title}>
               <h1>What is Lorem Ipsum?</h1>
@@ -17,6 +17,7 @@ const Home = () => {
         </div>
 
     </main>
+
   )
 }
 
