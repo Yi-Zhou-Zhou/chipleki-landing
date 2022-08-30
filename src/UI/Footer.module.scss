@@ -1,4 +1,90 @@
+@import "./../styles/variables.scss";
+
 .footer{
     padding: 1.2rem 3rem;
     background-color: #062c3f;
+    color: white;
+    font-family: 'Montserrat', ' sans-serif';
+
+
+}
+
+.container{
+    
+    @include breakpoint(sm) {
+        display: grid;
+        grid-template-columns: 1fr 1.3fr 1fr;
+        grid-template-areas:
+          'logo1 feed logo2'
+          'info feed logo3';
+        gap: 1rem;
+        justify-items: center;
+    }
+
+    &__logo{
+        margin-bottom: 1rem;
+        img{
+            width: 150px;
+        }
+        @include breakpoint(sm) {
+            img{
+                width: 150px;
+                grid-area: logo1;
+            }
+        }   
+    }
+
+    &__logo2{
+        img{
+            width: 150px;
+        }
+        @include breakpoint(sm) {
+            img{
+                width: 150px;
+                grid-area: logo2;
+            }
+        } 
+    }
+
+    &__logo3{
+        img{
+            width: 150px;
+        }
+        @include breakpoint(sm) {
+            img{
+                
+                grid-area: logo3;
+            }
+        } 
+    }
+
+    &__feed{
+        margin-bottom: 2.5rem;
+        @include breakpoint(sm) {
+            margin-bottom: 0rem;
+        grid-area: feed;
+        }
+    }
+
+    &__info{
+        margin-bottom: 2.5rem;
+        display: flex;
+            flex-direction: column;
+           gap: 0.2rem;
+        @include breakpoint(sm){
+            margin-top: 0.5rem;
+            grid-area: info;
+            margin-bottom: 0rem;
+        }
+
+        h2{
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        p{
+            font-size: 16px;
+        }
+    }
+
 }
