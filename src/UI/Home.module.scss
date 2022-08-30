@@ -13,10 +13,11 @@
     flex-wrap: wrap-reverse;
     width: 100%;
     gap: 0;
+    
     margin-bottom: 2rem;
 
     @include breakpoint(md){
-        
+        height: calc(100vh - $header-height);
 
         &__title{
             width: 35%;
