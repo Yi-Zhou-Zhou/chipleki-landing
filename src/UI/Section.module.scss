@@ -3,7 +3,12 @@
 
 .section{
     background-color: rgb(12, 42, 74);
-    padding: 1.2rem 3rem;
+    padding: 25px 30px ;
+
+    @include breakpoint(md){
+
+        padding: 70px 90px ;
+    }
     
     &__container{
         display: flex;
@@ -20,7 +25,7 @@
             @include breakpoint(md){
                 width: 50%;
                 margin-top: 0;
-                padding: 0 10%;
+                padding-right: 5%;
                 justify-content: center;
                 gap: 2rem;
             }
@@ -60,7 +65,7 @@
 
             @include breakpoint(md){
                 width: 50%;
-                height: 450px;
+                height: 550px;
             }
             
         }
