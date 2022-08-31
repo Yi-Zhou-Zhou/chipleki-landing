@@ -24,12 +24,9 @@
 
     &__logo{
         height: 100%;
-        margin-bottom: 1rem;
         display: flex;
         flex-direction: column;
-        
         gap: 2rem;
-        margin-bottom: 2rem;
         img{
             width: 150px;
         }
@@ -45,7 +42,7 @@
             }
         }
         @include breakpoint(sm) {
-            
+            grid-template-columns: repeat(auto-fit, 1fr);
             img{
                 width: 150px;
                 grid-area: logo;
@@ -56,7 +53,7 @@
     &__logo2{
         img{
             width: 150px;
-            height: 54px;
+            height: 48px;
         }
         @include breakpoint(sm) {
             img{
@@ -95,4 +92,13 @@
         } 
     }
 
+}
+
+.social__media{
+    display: flex;
+    gap: 1.5rem;
+
+    a{
+        color: white;
+    }
 }

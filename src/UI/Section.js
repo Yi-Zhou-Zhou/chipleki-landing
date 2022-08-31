@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Section.module.scss'
 const Section = () => {
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id='info'>
         <div className={styles.section__container}>
             <div className={styles.section__container__description}>
                 <h2 className={styles.section__container__description__title}>

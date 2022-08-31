@@ -6,7 +6,7 @@ import Functionalities from './Functionalities'
 import Footer from './Footer'
 const Home = () => {
   return (
-    <main className={styles.ab}>
+    <main className={styles.ab} id='home'>
         <div className={styles.main}>
           <div className={styles.main__title}>
               <h1>What is Lorem Ipsum?</h1>

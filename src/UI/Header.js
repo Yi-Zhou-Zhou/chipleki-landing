@@ -17,16 +17,16 @@ const Header = () => {
                 </div>
                 <div className={styles.header__content__links}>
                     <nav className={`${styles.nav} ${menuOpen ? styles[`nav--open`] : {}}`}>
-                        <a className={styles.nav__item} href={"/"}>
+                        <a className={styles.nav__item} href="#home">
                             Inicio
                         </a>
-                        <a className={styles.nav__item} href={"/"}>
+                        <a className={styles.nav__item} href="#info">
                             Qué es
                         </a>
-                        <a className={styles.nav__item} href={"/"}>
+                        <a className={styles.nav__item} href="#more">
                             Más información
                         </a>
-                        <a className={styles.nav__item} href={"/"}>
+                        <a className={styles.nav__item} href="#about-us">
                             Nuestro equipo
                         </a>
                     </nav>

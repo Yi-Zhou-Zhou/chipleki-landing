@@ -8,7 +8,7 @@ const Functionalities = () => {
 
 
   return (
-    <div className={styles.functionalities}>
+    <div className={styles.functionalities} id='more'>
         <div className={styles.container}>
             <div className={styles.container__section}>
                 <div className={styles.container__section__icon}>
