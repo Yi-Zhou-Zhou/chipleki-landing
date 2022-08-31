@@ -3,17 +3,11 @@
 
 .section{
     background-color: rgb(12, 42, 74);
-    padding: 25px 30px ;
+    padding: 1.2rem 30px;
 
-    @include breakpoint(md){
-
-        padding: 70px 90px ;
-    }
-    
     &__container{
         display: flex;
         flex-wrap: wrap;
-        
         &__description{
             margin-top: 2rem;
             font-family: 'Montserrat', sans-serif;
@@ -21,11 +15,11 @@
             align-self: center;
             flex-direction: column;
             gap: 1rem;
-            
+
             @include breakpoint(md){
                 width: 50%;
                 margin-top: 0;
-                padding-right: 5%;
+                padding: 0 10%;
                 justify-content: center;
                 gap: 2rem;
             }
@@ -61,13 +55,13 @@
         &__video{
             width: 100%;
             padding: 1.5rem 0;
-            height: 300px;
+            height: 400px;
 
             @include breakpoint(md){
                 width: 50%;
-                height: 550px;
+                height: 500px;
             }
-            
+
         }
 
     }

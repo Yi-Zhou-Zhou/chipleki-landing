@@ -39,6 +39,7 @@
 
         }
         &__img{
+            animation: bottom-to-top 0.8s ease-in;
             width: 120%;
             max-width: 768px;
             height: auto;
@@ -107,3 +108,14 @@
     }
 }
 
+@keyframes bottom-to-top{
+    0% { 
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY   (0);
+        opacity: 1;
+    }
+}

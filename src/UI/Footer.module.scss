@@ -15,21 +15,40 @@
         display: grid;
         grid-template-columns: 1fr 1.3fr 1fr;
         grid-template-areas:
-          'logo1 feed logo2'
-          'info feed logo3';
+          'logo feed logo2'
+          'logo feed logo3';
         gap: 1rem;
         justify-items: center;
+        
     }
 
     &__logo{
+        height: 100%;
         margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        
+        gap: 2rem;
+        margin-bottom: 2rem;
         img{
             width: 150px;
         }
+
+        &__info{    
+            h2{
+                font-weight: 600;
+                font-size: 18px;
+            }
+    
+            p{
+                font-size: 16px;
+            }
+        }
         @include breakpoint(sm) {
+            
             img{
                 width: 150px;
-                grid-area: logo1;
+                grid-area: logo;
             }
         }   
     }
@@ -37,10 +56,10 @@
     &__logo2{
         img{
             width: 150px;
+            height: 54px;
         }
         @include breakpoint(sm) {
             img{
-                width: 150px;
                 grid-area: logo2;
             }
         } 
@@ -49,6 +68,7 @@
     &__logo3{
         img{
             width: 150px;
+            height: auto;
         }
         @include breakpoint(sm) {
             img{
@@ -66,25 +86,13 @@
         }
     }
 
-    &__info{
-        margin-bottom: 2.5rem;
+    &__logos{
         display: flex;
+        justify-content: space-between;
+
+        @include breakpoint(sm) {
             flex-direction: column;
-           gap: 0.2rem;
-        @include breakpoint(sm){
-            margin-top: 0.5rem;
-            grid-area: info;
-            margin-bottom: 0rem;
-        }
-
-        h2{
-            font-weight: 600;
-            font-size: 18px;
-        }
-
-        p{
-            font-size: 16px;
-        }
+        } 
     }
 
 }

@@ -38,4 +38,10 @@ $xl: 75em;
             @content;
         }
     }
+
+    @if $point == logo {
+        @media (min-width: 450px ) and (max-width: 900px) {
+            @content;
+        }
+    }
 }

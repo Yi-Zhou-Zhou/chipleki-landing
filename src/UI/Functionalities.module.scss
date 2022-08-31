@@ -9,20 +9,23 @@
     }
 }
 
+
 .container{
     display: flex;
     flex-direction: column;
     font-family: "Montserrat", "sans-serif";
     
+
     &__section{
         display: flex;
        flex-wrap: wrap-reverse;
         gap: 1rem;
+        justify-content: center;
         border-bottom: 2px solid black;
         
         @include breakpoint(md){
             gap: 0;
-            padding: 70px 180px;
+            
         }
         
         &:nth-child(2){
@@ -30,6 +33,7 @@
         }
         &:nth-child(3){
             border: none;
+            margin-bottom: 0.5rem;
         }
        &__description{
         margin-top: 2rem;
@@ -53,16 +57,18 @@
         &__info{
             font-size: 18px;
             text-align: justify;
-        }
+        }   
         @include breakpoint(md){
             width: 50%;
             font-size: 20px;
+            
         }
 
 
        }
 
        &__icon{
+        
         &__image{
             width: 100%;
         }
@@ -70,7 +76,24 @@
             width: 50%;
             height: auto;
             
-        }   
+        }  
+        
+        @include breakpoint(logo){
+            max-width: 450px;
+            
+            
+        } 
+        
        }
+    }
+}
+
+@keyframes bottom-to-top{
+    0% { 
+        transform: translateY(50px);
+    }
+
+    100%{
+        transform: translateY   (0);
     }
 }
