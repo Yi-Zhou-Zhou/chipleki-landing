@@ -3,8 +3,7 @@
 
 .section{
     
-    background: rgb(16,28,28);
-    background: linear-gradient(180deg, rgba(16,28,28,1) 0%, rgba(32,44,60,1) 94%, rgba(255,255,255,1) 100%);
+    background-image: linear-gradient(to right, #182f3a, #152932, #12232b, #0f1e24, #0c181d);
     padding: 1.2rem 30px;
 
     &__container{

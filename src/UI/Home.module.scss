@@ -3,17 +3,10 @@
 
 .ab{
     position: absolute;
-    top: $header-height;
 }
 .main{
-    background: rgb(36,70,86);
-    background: linear-gradient(135deg, rgba(36,70,86,1) 0%, rgba(24,47,58,1) 30%, rgba(12,24,29,1) 60%);
-    
+    background-image: linear-gradient(to right bottom, #85c4ff, #70b7fe, #5babfd, #459dfb, #2e90f9, #2383eb, #1577dd, #006bcf, #005db4, #004f99, #00427f, #003566);    @include breakpoint(md){
     color: white;
-
-    padding: 0px 20px;
-    @include breakpoint(md){
-
         padding: 0px 15%;
     }
 
@@ -28,7 +21,7 @@
 
 
     @include breakpoint(md){
-        height: calc(100vh - $header-height);
+        height:100vh;
 
         &__title{
             width: 60%;

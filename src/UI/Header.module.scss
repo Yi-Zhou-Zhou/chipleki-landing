@@ -2,13 +2,13 @@
 
 .header {
     height: $header-height;
-    background: white;
+    background: transparent;
     color: black;
     position: fixed;
     z-index: 1000;
     width: 100%;
-    ;
-    padding: 0 $spacing-md;
+
+    padding: 0 2rem;
     font-family: 'Montserrat', sans-serif;
     @include breakpoint(lg){
         padding: 0 4rem;
@@ -19,21 +19,22 @@
         margin: 0 auto;
         padding: 0 $spacing-md;
         @include breakpoint(md) {
-            padding: 0 $spacing-lg;
+            padding: 0 2.5rem;
         }
         transition: 0.3s ease padding;
 
         height: 100%;
         display: flex;
         align-items: center;
-
         &__logo {
             flex: 1;
             white-space: nowrap;
         }
 
         &__links {
-            flex: 2;
+            
+            flex: 1;
+
             white-space: nowrap;
         }
     }
@@ -65,7 +66,7 @@
     font-size: 26px;
     font-weight: 700;
     height: 60px;
-    
+    cursor: pointer;
 }
 
 .nav {

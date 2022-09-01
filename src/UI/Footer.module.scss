@@ -1,7 +1,7 @@
 @import "./../styles/variables.scss";
 
 .footer{
-    padding: 1.2rem 3rem;
+    padding: 1.2rem 2rem 1rem 2rem;
     background-color: #062c3f;
     color: white;
     font-family: 'Montserrat', ' sans-serif';
@@ -26,7 +26,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         img{
             width: 150px;
         }
@@ -38,13 +38,14 @@
             }
     
             p{
-                font-size: 16px;
+                font-size: 15px;
             }
         }
         @include breakpoint(sm) {
+            gap: 1rem;
             grid-template-columns: repeat(auto-fit, 1fr);
             img{
-                width: 150px;
+                width: 120px;
                 grid-area: logo;
             }
         }   
@@ -52,25 +53,30 @@
 
     &__logo2{
         img{
-            width: 150px;
-            height: 48px;
+            
+            width: 75%;
         }
         @include breakpoint(sm) {
             img{
                 grid-area: logo2;
+                height: 48px;
+                
+                width: 75%;
             }
         } 
     }
 
     &__logo3{
         img{
-            width: 150px;
+            width: 100%;
             height: auto;
         }
         @include breakpoint(sm) {
             img{
                 
                 grid-area: logo3;
+                width: 50%;
+
             }
         } 
     }
@@ -86,7 +92,7 @@
     &__logos{
         display: flex;
         justify-content: space-between;
-
+        gap: 2rem;
         @include breakpoint(sm) {
             flex-direction: column;
         } 

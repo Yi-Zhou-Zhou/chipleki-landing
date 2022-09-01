@@ -26,6 +26,10 @@ const Functionalities = () => {
                 
             </div>
             <div className={styles.container__section}>
+            
+                <div className={styles.container__section__icon}>
+                    <img  src={testing} alt='search exercises' className={styles.container__section__icon__image}/>
+                </div>
                 <div className={styles.container__section__description}>
                     <div className={styles.container__section__description__title}>
                         Diversidad de ejercicios
@@ -33,10 +37,6 @@ const Functionalities = () => {
                     <div className={styles.container__section__description__info}>
                         <h2>PySano posee una gran variedad de ejercicios para que practiques y refuerzes lo aprendido en el Aula.</h2>
                     </div>
-                </div>
-
-                <div className={styles.container__section__icon}>
-                    <img  src={testing} alt='search exercises' className={styles.container__section__icon__image}/>
                 </div> 
             </div>
             <div className={styles.container__section}>
