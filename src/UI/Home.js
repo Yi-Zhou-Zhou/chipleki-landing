@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./Home.module.scss"
-import background from "../imgs/background2.png"
+import background from "../imgs/cacoPhoto.png"
 import Section from './Section'
 import Functionalities from './Functionalities'
 import Footer from './Footer'
@@ -9,8 +9,8 @@ const Home = () => {
     <main className={styles.ab} id='home'>
         <div className={styles.main}>
           <div className={styles.main__title}>
-              <h1>What is Lorem Ipsum?</h1>
-              <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </h2>
+              <h1>CONOCIMIENTO EN LA PALMA DE TU MANO</h1>
+              <h2>Estudia eficientemente con ejercicios seleccionados para ti</h2>
               <button> Más información</button>
           </div>
           <div className={styles.main__bg}>

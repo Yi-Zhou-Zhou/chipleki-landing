@@ -4,7 +4,7 @@ import styles from "./Header.module.scss";
 
 import { BiMenuAltRight } from "react-icons/bi";
 import { GrClose} from "react-icons/gr";
-import PySano from "../imgs/logo.png"
+import PySano from "../imgs/logo2.png"
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const menuToggler = () => setMenuOpen((p) => !p);
