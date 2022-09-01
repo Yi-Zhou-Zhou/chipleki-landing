@@ -17,10 +17,10 @@ const Functionalities = () => {
                 
                 <div className={styles.container__section__description}>
                     <div className={styles.container__section__description__title}>
-                        Lorem Ipsum
+                        Selección de ejercicios inteligente
                     </div>
                     <div className={styles.container__section__description__info}>
-                        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an is simply dummy text of the printing and typesetting industry.</h2>
+                        <h2>PySano selecciona los ejercicios perfectos para tu estudio personal en base a tus capacidades,permitiendo adaptarse perfectamente a lo que necesitas.</h2>
                     </div>
                 </div>
                 
@@ -28,10 +28,10 @@ const Functionalities = () => {
             <div className={styles.container__section}>
                 <div className={styles.container__section__description}>
                     <div className={styles.container__section__description__title}>
-                        Lorem Ipsum
+                        Diversidad de ejercicios
                     </div>
                     <div className={styles.container__section__description__info}>
-                        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an is simply dummy text of the printing and typesetting industry.</h2>
+                        <h2>PySano posee una gran variedad de ejercicios para que practiques y refuerzes lo aprendido en el Aula.</h2>
                     </div>
                 </div>
 
@@ -46,12 +46,12 @@ const Functionalities = () => {
                 
                 <div className={styles.container__section__description}>
                     <div className={styles.container__section__description__title}>
-                        Lorem Ipsum
+                    Retroalimentación adjetivo descriptivo
                     </div>
                     
                     
                      <div className={styles.container__section__description__info}>
-                        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an is simply dummy text of the printing and typesetting industry.</h2>
+                        <h2>PySano entrega retroalimentación descriptiva al momento de que resuelvas los ejercicios, de forma de guiarte y enfocarte en tu proceso de aprendizaje.</h2>
                     </div>
                 </div>
                 

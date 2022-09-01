@@ -9,7 +9,7 @@ const Section = () => {
                     Que es Pysano
                 </h2>
                 <p className={styles.section__container__description__info}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an standard dummy text ever since the 1500s, when an
+                PySano es una plataforma que te permite mejorar tu pensamiento computacional y tus habilidades en la programación. Dispone de una herramienta  selección inteligente de ejercicios de acuerdo a tus capacidades y necesidades.
                 </p>
             </div>
             <div className={styles.section__container__video}>
