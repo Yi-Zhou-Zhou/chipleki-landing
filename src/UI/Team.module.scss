@@ -81,6 +81,7 @@
   .card {
     height: 350px;
     width: 350px;
+    min-width: 300px;
     background: #808080;
     border-radius: 10px;
     transition: background 0.8s;
@@ -92,8 +93,19 @@
     align-items: center;
     position: relative;
 
+    a{
+        color: white;
+    }
     &:hover{
         h2{
+            opacity: 1;
+        }
+
+        h3{
+            opacity: 1;
+        }
+
+        .icons{
             opacity: 1;
         }
 
@@ -101,6 +113,7 @@
     img{
         background-size: cover;
         height: 100%;   
+        position: absolute;
     }
     h2 {
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -109,9 +122,10 @@
         opacity: 0;
         font-size: 30px;
         position: absolute;
-        top: 0;
-        left: 0;
+        bottom: 40px;
+        left: 15%;
         transition: opacity 1s;
+        font-weight: 550;
       }
 
       h3 {
@@ -121,7 +135,9 @@
         opacity: 0;
         font-size: 18px;
         position: absolute;
-        top: 0;
+        bottom: 0;
+        left: 15%;
+        font-size: 20px;
         transition: opacity 1s;
       }
 
@@ -132,11 +148,145 @@
     position: absolute;
     fill: #fff;
     color: #fff;
-    height: 130px;
-    top: 226px;
-    width: 50px;
+    top: 0;
+    right: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; 
     justify-content: space-around;
+    opacity: 0;
+    padding-right: 1rem;
+    gap:1rem;
+    transition: opacity 1s ease-in;
+    padding-top: 1rem;
+  } 
+
+
+  .card1{
+    background-image: url("../imgs/Vicente.JPG");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.25s ease-in-out;
   }
+
+  .card2{
+    background-image: url("../imgs/Javier.JPG");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.25s ease-in-out;
+  }
+  .card3{
+    background-image: url("../imgs/Axel.JPG");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.25s ease-in-out;
+  }
+  .card4{
+    background-image: url("../imgs/Joaquin.JPG");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.25s ease-in-out;
+  }
+
+  .card5{
+    background-image: url("../imgs/Ariel.JPG");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.25s ease-in-out;
+  }
+  .card6{
+    background-image: url("../imgs/Yi.JPG");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.25s ease-in-out;
+  }
+
+  .card6:hover{
+    background-color: rgba(0,0,0,.4);   
+    background-size: cover;
+    background-position: center;
+   
+    
+  }
+  .card6:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: inherit;
+    content: ' ';
+  }
+
+  .card5:hover{
+    background-color: rgba(0,0,0,.4);   
+    background-size: cover;
+    background-position: center;
+   
+    
+  }
+  .card5:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: inherit;
+    content: ' ';
+  }
+
+  .card4:hover{
+    background-color: rgba(0,0,0,.4);   
+    background-size: cover;
+    background-position: center;
+   
+    
+  }
+  .card4:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: inherit;
+    content: ' ';
+  }
+
+  .card3:hover{
+    background-color: rgba(0,0,0,.4);   
+    background-size: cover;
+    background-position: center;
+   
+    
+  }
+  .card3:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: inherit;
+    content: ' ';
+  }
+
+  .card2:hover{
+    background-color: rgba(0,0,0,.4);   
+    background-size: cover;
+    background-position: center;
+   
+    
+  }
+  .card2:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: inherit;
+    content: ' ';
+  }
+
+  .card:hover{
+    background-color: rgba(0,0,0,.4);   
+    background-size: cover;
+    background-position: center;
+   
+    
+  }
+  .card:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: inherit;
+    content: ' ';
+  }
+

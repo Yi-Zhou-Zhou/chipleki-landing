@@ -1,0 +1,197 @@
+@import "./../styles/variables.scss";
+
+.header {
+    height: $header-height;
+    background: transparent;
+    color: black;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+
+    padding: 0 2rem;
+    font-family: 'Montserrat', sans-serif;
+    @include breakpoint(lg){
+        padding: 0 4rem;
+    }
+    &__content {
+        
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0 $spacing-md;
+        @include breakpoint(md) {
+            padding: 0 2.5rem;
+        }
+        transition: 0.3s ease padding;
+
+        height: 100%;
+        display: flex;
+        align-items: center;
+        &__logo {
+            flex: 1;
+            white-space: nowrap;
+        }
+
+        &__links {
+            
+            flex: 1;
+            white-space: nowrap;
+        }
+    }
+
+    &__button__container {
+        display: none;
+        @include breakpoint(md) {
+            display: initial;
+        }
+    }
+    &__toggler {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:none;
+        background-color: transparent;
+        cursor: pointer;
+        @include breakpoint(md) {
+            display: none;
+        }
+        & > svg {
+            display: block;
+            font-size: 32px;
+        }
+    }
+}
+
+.header__color{
+    height: $header-height;
+    background: white;
+    border-bottom: 2px solid rgb(229, 229, 229);
+
+    color: black;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+
+    padding: 0 2rem;
+    font-family: 'Montserrat', sans-serif;
+    @include breakpoint(lg){
+        padding: 0 4rem;
+    }
+    &__content {
+        
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0 $spacing-md;
+        @include breakpoint(md) {
+            padding: 0 2.5rem;
+        }
+        transition: 0.3s ease padding;
+
+        height: 100%;
+        display: flex;
+        align-items: center;
+        &__logo {
+            flex: 1;
+            white-space: nowrap;
+        }
+
+        &__links {
+            
+            flex: 1;
+
+            white-space: nowrap;
+        }
+
+
+    }
+
+    &__button__container {
+        display: none;
+        @include breakpoint(md) {
+            display: initial;
+        }
+    }
+    
+    
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    height: 60px;
+    cursor: pointer;
+}
+
+.nav {
+    font-weight: 550;
+    font-size: 16px;
+    width: 100%;
+    position: fixed;
+    top: $header-height;
+    right: -100%;
+    background-color: #062C3F;
+    
+    text-align: center;
+    padding: $spacing-md 0;
+
+    &--open {
+        transition: 0.2s ease right;
+        right: 0;
+        color: white;
+    }
+
+    &__item {
+        display: block;
+        padding: $spacing-md;
+        text-decoration: none;
+        color: inherit;
+        height: 100%;
+        cursor: pointer;
+        transition: 0.3s ease color;
+        &:hover {
+            color: #244653;
+        }
+    }
+
+    @include breakpoint(md) {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background: initial;
+        width: auto;
+        padding: 0;
+
+        &__item {
+            padding: 0 $spacing-lg;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+    }
+
+    &__button__container {
+        @include breakpoint(md) {
+            display: none;
+        }
+        padding: $spacing-md;
+    }
+}
+
+.button {
+    font-weight: 500;
+    color: $primary;
+    border: 2px solid $primary;
+    padding: $spacing-sm $spacing-lg;
+    border-radius: $spacing-sm / 2;
+    cursor: pointer;
+
+    box-shadow: 0 0 0.5em 0 $primary;
+
+    &:active {
+        transform: scale(0.98);
+        border-radius: 0;
+    }
+    &:hover {
+        box-shadow: 0 0 0.75em 0 $primary;
+    }
+}
