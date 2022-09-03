@@ -18,10 +18,10 @@ const Footer = () => {
             </div>
 
             <div className={styles.container__logo__info}>
-                <h2>Encuentranos en</h2>
+                <h2>Encuéntranos en</h2>
                 <p>XXX Feria de Software</p>
-                <p>Universidad Tecnica Federico Santa Maria</p>
-                <p>Av. Espana 1680, Valparaiso</p>
+                <p>Universidad Técnica Federico Santa María</p>
+                <p>Av. España 1680, Valparaíso</p>
             </div>
           <div className={styles.social__media}>
             <a href='https://facebook.com'><FaFacebookSquare size={32}/></a>

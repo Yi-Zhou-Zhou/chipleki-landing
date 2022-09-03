@@ -1,0 +1,142 @@
+@import "./../styles/variables.scss";
+
+.container{
+    padding: 3rem 3rem;
+    background-color: white;
+
+    &__section{
+        @include breakpoint(md){
+            padding: 2rem 4rem;
+        }
+        &__title{
+                
+            color: black;
+            margin-bottom: 1rem;
+            @include breakpoint(md){
+                width: 75%;
+                font-size: 42px;
+                display: flex;
+                text-align: start;
+                margin-bottom: 0;
+                margin-bottom: 1.6rem;
+            }
+            font-size: 28px;
+            font-weight: 500;
+        }
+    }
+
+}
+
+
+.wrapper{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+    &__card{
+        height: 500px;
+        margin: 50px;
+        box-shadow: 5px 5px 20px black;
+        overflow: hidden;
+
+        img{
+            height: 500px;
+            width: 350px;
+            border-radius: 3px;
+        }
+        &__intro{
+            height: 200px;
+            width: 350px;
+            padding: 6px;
+            margin-bottom: 240px;
+            position: absolute;
+            background: rgb(27,27,27,0.5);
+            color: white;
+
+            h1{
+                margin: 10px;
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px;
+                margin: 20px;
+            }
+        }
+
+
+        
+    }
+}
+
+
+.wrapper{
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+  }
+  .border:hover {
+    border: 1px solid #fff;
+  }
+  .card {
+    height: 350px;
+    width: 350px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &:hover{
+        h2{
+            opacity: 1;
+        }
+
+    }
+    img{
+        background-size: cover;
+        height: 100%;   
+    }
+    h2 {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #fff;
+        margin: 20px;
+        opacity: 0;
+        font-size: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 1s;
+      }
+
+      h3 {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #fff;
+        margin: 20px;
+        opacity: 0;
+        font-size: 18px;
+        position: absolute;
+        top: 0;
+        transition: opacity 1s;
+      }
+
+  }
+
+  
+  .icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }

@@ -9,9 +9,19 @@ import {Link as LinkS} from "react-scroll"
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const menuToggler = () => setMenuOpen((p) => !p);
+    const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY >= 90){
+            setColor(true)
+        }
+        else{
+            setColor(false)
+        }
+    }
 
+    window.addEventListener('scroll', changeColor)
     return (
-        <div className={styles.header}>
+        <div className={color ? styles.header__color : styles.header}>
             <div className={styles.header__content}>
                 <div className={styles.header__content__logo}>
                 <LinkS to="home" spy={true} smooth={true} offset={-100} duration={500}>
@@ -21,7 +31,7 @@ const Header = () => {
                 </div>
                 <div className={styles.header__content__links}>
                     <nav className={`${styles.nav} ${menuOpen ? styles[`nav--open`] : {}}`}>
-                        <LinkS to="home" spy={true} smooth={true} offset={-100} duration={500}>
+                        <LinkS className={styles.nav__item} to="home" spy={true} smooth={true} offset={-100} duration={500}>
                             Inicio
                         </LinkS>
                         <a className={styles.nav__item} href="#info">
@@ -30,7 +40,7 @@ const Header = () => {
                         <a className={styles.nav__item} href="#more">
                             Más información
                         </a>
-                        <a className={styles.nav__item} href="#about-us">
+                        <a className={styles.nav__item} href="about-us">
                             Nuestro equipo
                         </a>
                     </nav>
