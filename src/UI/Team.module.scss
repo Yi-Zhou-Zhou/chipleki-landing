@@ -14,8 +14,9 @@
             margin-bottom: 1rem;
             @include breakpoint(md){
                 width: 75%;
-                font-size: 42px;
+                font-size: 52px;
                 display: flex;
+                font-family: "Roboto", "sans-serif";
                 text-align: start;
                 margin-bottom: 0;
                 margin-bottom: 1.6rem;
