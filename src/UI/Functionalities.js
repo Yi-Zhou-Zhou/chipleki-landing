@@ -1,8 +1,6 @@
 import React from 'react'
 import styles from './Functionalities.module.scss'
-import search from '../imgs/search.png'
-import testing from '../imgs/testing.png'
-import rank from '../imgs/rank.png'
+
 import Terminal from 'react-animated-term'
 import selection from '../imgs/selection.png'
 import diversity from '../imgs/diversity.png'

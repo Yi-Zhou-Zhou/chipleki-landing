@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Team.module.scss'
-import Vicente from '../imgs/Vicente.png'
+import Vicente from '../imgs/Vicente.JPG'
 import Yi from '../imgs/Yi.JPG'
 import Javier from '../imgs/Javier.JPG'
 import Joaquin from '../imgs/Joaquin.JPG'
