@@ -6,7 +6,7 @@ const Section = () => {
         <div className={styles.section__container}>
             <div className={styles.section__container__description}>
                 <h2 className={styles.section__container__description__title}>
-                    Que es Pysano
+                    Qué es Pysano
                 </h2>
                 <hr>
                 </hr>

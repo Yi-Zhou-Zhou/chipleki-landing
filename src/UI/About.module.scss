@@ -3,10 +3,13 @@
 .container{
     padding: 3rem 3rem;
     background-color: #F9F9F9;
+    font-family: 'Roboto', sans-serif;
     &__section{
         margin-top: $header-height;
+        margin-bottom: 2rem;
         @include breakpoint(md){
-            padding: 2rem 4rem;
+            padding: 2rem 4rem 0 4rem;
+            margin-bottom: 0;
         }
         &__title{
                 
@@ -14,13 +17,13 @@
             margin-bottom: 1rem;
             @include breakpoint(md){
                 width: 75%;
-                font-size: 42px;
+                font-size: 52px;
                 display: flex;
                 text-align: start;
                 margin-bottom: 0;
                 margin-bottom: 1.6rem;
             }
-            font-size: 28px;
+            font-size: 38px;
             font-weight: 500;
         }
     }
@@ -48,11 +51,14 @@
             }
             p{
                 color: gray;
+                font-size: 20px;
                 @include breakpoint(md){
                     flex: 2;
                     font-size: 24px;
+                    margin-bottom: 1rem;
                     
                 }
+                margin-bottom: 2rem;
             }
         }
 

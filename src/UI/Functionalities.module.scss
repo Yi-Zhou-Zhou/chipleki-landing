@@ -1,6 +1,8 @@
 @import "./../styles/variables.scss";
 
 .functionalities{
+    font-family: 'Roboto', sans-serif;
+
     padding: 3rem 2rem;
     @include breakpoint(md){
         padding:5rem 7rem 5rem 7rem;
@@ -14,16 +16,16 @@
         margin-bottom: 4rem;
 
         &__h2{
-            font-size: 28px;
+            font-size: 38px;
             @include breakpoint(md){
-                font-size: 44px;
+                font-size: 52px;
                 
                 
             }
     
         }
         &__p{
-            font-size: 25px;
+            font-size: 20px;
             color: gray;
             width: 100%;
             text-align: center;
@@ -31,6 +33,7 @@
             
             @include breakpoint(md){
                 width: 40%;
+                font-size: 24px;
             }
         }
     
@@ -59,7 +62,7 @@
         gap: 5rem;
         &__icon{
             width: 100%;
-            min-width: 500px;
+            min-width: 350px;
             @include breakpoint(md){
                 flex: 1
             }

@@ -17,7 +17,7 @@ const About = () => {
             <hr/>
         </div>
 
-        <div className={styles.container__info}>
+        <div className={styles.container__info} id="nosotros">
           <div className={styles.container__info__head}>
             <p >Somos Chipleki, un equipo de estudiantes de la Universidad Técnica Federico Santa María con el objetivo de ayudar a estudiantes con su aprendizaje en el área de la programación y la computación.</p>
           </div>

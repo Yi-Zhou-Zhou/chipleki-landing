@@ -9,7 +9,7 @@
     width: 100%;
 
     padding: 0 2rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;  
     @include breakpoint(lg){
         padding: 0 4rem;
     }
@@ -127,13 +127,14 @@
     position: fixed;
     top: $header-height;
     right: -100%;
-    background: rgba($bg2, 0.8);
+    background-color: #062C3F;
     text-align: center;
     padding: $spacing-md 0;
 
     &--open {
         transition: 0.2s ease right;
         right: 0;
+        color: white;
     }
 
     &__item {
@@ -141,12 +142,12 @@
         padding: $spacing-md;
         text-decoration: none;
         color: inherit;
-
+        cursor: pointer;
         height: 100%;
 
         transition: 0.3s ease color;
         &:hover {
-            color: $primary;
+            color: #244653;
         }
     }
 
