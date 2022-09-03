@@ -1,11 +1,5 @@
 import React from 'react'
 import styles from './Team.module.scss'
-import Vicente from '../imgs/Vicente.JPG'
-import Yi from '../imgs/Yi.JPG'
-import Javier from '../imgs/Javier.JPG'
-import Joaquin from '../imgs/Joaquin.JPG'
-import Axel from '../imgs/Axel.JPG'
-import Ariel from '../imgs/Ariel.JPG'
 import {AiFillLinkedin,AiFillFacebook} from "react-icons/ai"
 import { style } from '@mui/system'
 const Team = () => {

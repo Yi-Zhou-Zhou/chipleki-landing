@@ -29,7 +29,7 @@ const About = () => {
                   <h2>Misión</h2>
                 </div>
                 <div className={styles.container__info__body__card__description}>
-                    <p>Promover a los jóvenes hábitos de inversiones en el mundo del trading, poniendo a su disposición una plataforma con las mejores herramientas para practicar y así crear una comunidad de futuros inversores que ayuden a tomar decisiones fundamentadas para una buena inversión</p>
+                    <p>Entregar ejercicios personalizados de acuerdo a las necesidades y capacidades del estudiante.</p>
                 </div>
             </div>
             <div className={styles.container__info__body__card}>
@@ -38,7 +38,7 @@ const About = () => {
                   <h2>Visión</h2>
                 </div>
                 <div className={styles.container__info__body__card__description}>
-                    <p>Promover a los jóvenes hábitos de inversiones en el mundo del trading, poniendo a su disposición una plataforma con las mejores herramientas para practicar y así crear una comunidad de futuros inversores que ayuden a tomar decisiones fundamentadas para una buena inversión</p>
+                <p>Ser la herramienta líder para el estudio en asignaturas de programación.</p>
                 </div>
             </div>
             <div className={styles.container__info__body__card}>
@@ -47,7 +47,7 @@ const About = () => {
                   <h2>Valores</h2>
                 </div>
                 <div className={styles.container__info__body__card__description}>
-                    <p>Promover a los jóvenes hábitos de inversiones en el mundo del trading, poniendo a su disposición una plataforma con las mejores herramientas para practicar y así crear una comunidad de futuros inversores que ayuden a tomar decisiones fundamentadas para una buena inversión</p>
+                <p>Superarnos día a día con el fin de propociorcionar software de calidad</p>
                 </div>
             </div>
           </div>

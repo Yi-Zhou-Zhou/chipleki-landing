@@ -4,28 +4,27 @@
     padding: 1.2rem 2rem 1rem 2rem;
     background-color: #062c3f;
     color: white;
-    font-family: 'Montserrat', ' sans-serif';
-
+    font-family: "Lato","sans-serif";
+    @include breakpoint(md){
+        padding: 1.2rem 7rem 1.2rem 7rem;
+    }
 
 }
 
 .container{
-    
     @include breakpoint(sm) {
-        display: grid;
-        grid-template-columns: 1fr 1.3fr 1fr;
-        grid-template-areas:
-          'logo feed logo2'
-          'logo feed logo3';
-        gap: 1rem;
-        justify-items: center;
-        
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
     }
 
     &__logo{
         height: 100%;
+        flex: 1;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         gap: 1rem;
         img{
             width: 150px;
@@ -50,61 +49,34 @@
             }
         }   
     }
-
-    &__logo2{
-        img{
-            
-            width: 75%;
-        }
-        @include breakpoint(sm) {
-            img{
-                grid-area: logo2;
-                height: 48px;
-                
-                width: 75%;
-            }
-        } 
-    }
-
-    &__logo3{
-        img{
-            width: 100%;
-            height: auto;
-        }
-        @include breakpoint(sm) {
-            img{
-                
-                grid-area: logo3;
-                width: 50%;
-
-            }
-        } 
-    }
-
-    &__feed{
-        margin-bottom: 2.5rem;
-        @include breakpoint(sm) {
-            margin-bottom: 0rem;
-        grid-area: feed;
-        }
-    }
-
-    &__logos{
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
-        @include breakpoint(sm) {
-            flex-direction: column;
-        } 
-    }
-
 }
+
+   
 
 .social__media{
     display: flex;
     gap: 1.5rem;
+    margin-bottom: 2rem;
 
+    @include breakpoint(md){
+        margin-bottom: 0;
+    }
     a{
         color: white;
+    }
+}
+
+.uLogo{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-self: center;
+    flex:1.5 ;
+    flex-wrap: wrap;
+    img{
+        max-height: 70px;
+        @include breakpoint(md){
+            height: 70px;
+        }
     }
 }

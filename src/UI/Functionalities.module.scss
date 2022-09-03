@@ -1,7 +1,7 @@
 @import "./../styles/variables.scss";
 
 .functionalities{
-    font-family: 'Roboto', sans-serif;
+    font-family: "Lato","sans-serif";
 
     padding: 3rem 2rem;
     @include breakpoint(md){
@@ -106,16 +106,6 @@
 
    
 
-
-@keyframes bottom-to-top{
-    0% { 
-        transform: translateY(50px);
-    }
-
-    100%{
-        transform: translateY   (0);
-    }
-}
 
 
 .terminal{

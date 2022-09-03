@@ -33,23 +33,14 @@ const Footer = () => {
 
         </div>
 
-        
+      <div className={styles.uLogo}>
+        <img src={usm} alt="usm"/>
+        <img src={feria} alt="fesw"/>
+      </div>
+      
             
 
-        <div className={styles.container__feed}>
-        {/* <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="450px" data-height="210px" data-small-header="true" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div> */}
-        feed
-        </div>
-
-        <div className={styles.container__logos}>
-            <div className={styles.container__logo2}>
-            <img src={usm} alt='utfsm'/>
-            </div>
-
-            <div className={styles.container__logo3}>
-            <img src={feria} alt='feria de software'/>
-            </div>
-        </div>
+      
         
       </div>
     </footer>
