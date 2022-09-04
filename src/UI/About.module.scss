@@ -71,9 +71,10 @@
                 background: rgb(255, 255, 255);
                 flex: 1;
                 min-width: 300px;
+                transition: all 0.4s ease-in;
                 border-radius: 10px;
                 &:hover{
-                        transform: translateY(-5px) scale(1.005) translateZ(0);
+                        transform: translateY(-10px) scale(1.005) translateZ(0);
                         box-shadow: 0 24px 36px rgba(0,0,0,0.11)
 }
                 &__logo{

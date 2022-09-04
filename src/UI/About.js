@@ -5,10 +5,11 @@ import vision from '../imgs/vision.png'
 import values from '../imgs/values.png'
 import Footer from './Footer'
 import Team from './Team'
+import { Fade } from 'react-awesome-reveal'
 const About = () => {
   return (
     <>
-    
+  <Fade delay={350} triggerOnce>
     <div className={styles.container}>
       {/* About us Section  */}
         <div className={styles.container__section}>
@@ -55,7 +56,9 @@ const About = () => {
     </div>
     <Team></Team>
     <Footer></Footer>
+    </Fade>
     </>
+    
     
   )
 }
