@@ -1,6 +1,5 @@
 import styles from './About.module.scss'
 import React from 'react'
-import ChiplekiLogo from '../imgs/ChiplekiLogo.png'
 import mission from '../imgs/mission.png'
 import vision from '../imgs/vision.png'
 import values from '../imgs/values.png'
@@ -25,29 +24,29 @@ const About = () => {
           <div className={styles.container__info__body}>
             <div className={styles.container__info__body__card}>
                 <div className={styles.container__info__body__card__logo}>
-                  <img src={mission}/>
+                  <img src={mission} alt="Our mission"/>
                   <h2>Misión</h2>
                 </div>
                 <div className={styles.container__info__body__card__description}>
-                    <p>Entregar ejercicios personalizados de acuerdo a las necesidades y capacidades del estudiante.</p>
+                    <p>Contribuir en el proceso de aprendizaje de los estudiantes en el área de la programación, poniendo a su disposición ejercicios que se adecúen a las necesidades y capacidades del estudiante.</p>
                 </div>
             </div>
             <div className={styles.container__info__body__card}>
                 <div className={styles.container__info__body__card__logo}>
-                  <img src={vision}/>
+                  <img src={vision} alt="Our Vision"/>
                   <h2>Visión</h2>
                 </div>
                 <div className={styles.container__info__body__card__description}>
-                <p>Ser la herramienta líder para el estudio en asignaturas de programación.</p>
+                <p>Queremos ser la plataforma líder para la ejercitación en asignaturas de programación, siendo reconocida por instituciones de educación superior y media.</p>
                 </div>
             </div>
             <div className={styles.container__info__body__card}>
                 <div className={styles.container__info__body__card__logo}>
-                  <img src={values}/>
+                  <img src={values} alt="Our Values"/>
                   <h2>Valores</h2>
                 </div>
                 <div className={styles.container__info__body__card__description}>
-                <p>Superarnos día a día con el fin de propociorcionar software de calidad</p>
+                <p>Creemos en los beneficios del esfuerzo y el trabajo duro,  lo que nos impulsa a superarnos día a día con el fin de propociorcionar software de mejor calidad.</p>
                 </div>
             </div>
           </div>

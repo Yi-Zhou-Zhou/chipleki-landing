@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Section.module.scss'
-import { Fade, Slide, Hinge} from "react-awesome-reveal";
+import { Fade} from "react-awesome-reveal";
 const Section = () => {
   return (
     <div className={styles.section} id='info'>

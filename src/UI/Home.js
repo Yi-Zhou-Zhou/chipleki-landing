@@ -4,8 +4,6 @@ import Section from './Section'
 import Functionalities from './Functionalities'
 import Footer from './Footer'
 import {Link as LinkS} from "react-scroll"
-import About from './About'
-
 const Home = () => {
   return (
     <main  id='home'>

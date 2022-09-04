@@ -4,8 +4,8 @@ import chipleki from '../imgs/chipleki.png'
 import usm from '../imgs/usm.png'
 import feria from '../imgs/feria.png'
 import {FaFacebookSquare} from 'react-icons/fa'
-import {AiOutlineInstagram, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai'
-import { Link } from 'react-router-dom'
+import {AiFillLinkedin, AiFillInstagram} from 'react-icons/ai'
+
 const Footer = () => {
   
   return (

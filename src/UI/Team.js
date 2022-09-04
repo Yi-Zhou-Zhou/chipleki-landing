@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Team.module.scss'
+import { Fade} from 'react-awesome-reveal'
 import {AiFillLinkedin,AiFillFacebook} from "react-icons/ai"
-import { style } from '@mui/system'
 const Team = () => {
   return (
     <div className={styles.container} id="equipo">
@@ -13,6 +13,8 @@ const Team = () => {
         
 
 <div className={styles.wrapper}>
+  <Fade cascade duration={600} triggerOnce>
+  
 <div className={`${styles.card} ${styles.card1}`}> 
 
       <h2>Vicente de la Rosa</h2>
@@ -25,7 +27,7 @@ const Team = () => {
   </div>
   <div className={`${styles.card} ${styles.card2}`}> 
       <h2>Javier Tralma</h2>
-      <h3>Software Engineer</h3>
+      <h3>Full Stack Developer</h3>
 
       <div className={styles.icons}>
       <a href='https://www.linkedin.com/in/javier-tralma/'><AiFillLinkedin size={30}> </AiFillLinkedin></a>
@@ -67,7 +69,7 @@ const Team = () => {
 
     </div>
   </div>
-  
+  </Fade>
 
   
   

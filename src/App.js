@@ -1,10 +1,12 @@
 import './App.css';
-import { Router, Routes, Route, BrowserRouter,useLocation} from 'react-router-dom';
+import {Routes, Route, BrowserRouter,useLocation} from 'react-router-dom';
+import {useState, useEffect} from "react";
 import Home from './UI/Home';
 import Header from './UI/Header';
 import About from './UI/About';
 import AboutHeader from "./UI/AboutHeader"
-import { useLayoutEffect } from 'react'
+import React, { useLayoutEffect } from 'react'
+import { HashLoader } from 'react-spinners';
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -15,7 +17,21 @@ const Wrapper = ({children}) => {
 } 
 
 function App() {
-  return (
+
+  const [isLoading, setIsLoading] = useState(true)
+
+  const handleLoading = () => {
+    setIsLoading(false);
+    }
+
+    useEffect(()=>{
+      window.addEventListener("load",handleLoading);
+      return () => window.removeEventListener("load",handleLoading);
+      },[])
+  return !isLoading ? (
+
+  
+    
     <BrowserRouter>
     <Wrapper>
       <Routes>
@@ -29,7 +45,11 @@ function App() {
       </Routes>
       </Wrapper>
       </BrowserRouter>
-  );
+
+) : 
+  <div className='spinner'>
+    <HashLoader  loading={isLoading} size={75}/>
+  </div>
 }
 
 export default App;

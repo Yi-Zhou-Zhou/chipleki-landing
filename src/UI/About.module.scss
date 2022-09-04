@@ -66,11 +66,16 @@
             display: flex;
             gap: 2rem;
             flex-wrap: wrap;
+                
             &__card{
                 background: rgb(255, 255, 255);
                 flex: 1;
                 min-width: 300px;
                 border-radius: 10px;
+                &:hover{
+                        transform: translateY(-5px) scale(1.005) translateZ(0);
+                        box-shadow: 0 24px 36px rgba(0,0,0,0.11)
+}
                 &__logo{
                     width: 100px;
                     margin: 0 auto;
@@ -87,12 +92,13 @@
                         font-size: 30px;
                     }
                 }
-
+                
                 &__description{
+                    padding: 0 1.4rem;
                     font-size: 20px;
                     color: gray;
                 }
-
+                
                 padding: 4rem 2rem;
             }
         }
