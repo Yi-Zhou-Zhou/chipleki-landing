@@ -18,15 +18,13 @@ const Wrapper = ({children}) => {
 
 function App() {
 
-  const [isLoading, setIsLoading] = useState(true)
-
-  const handleLoading = () => {
-    setIsLoading(false);
-    }
+  const [isLoading, setIsLoading] = useState(false)
 
     useEffect(()=>{
-      window.addEventListener("load",handleLoading);
-      return () => window.removeEventListener("load",handleLoading);
+      setIsLoading(true)
+      setTimeout(() => {
+          setIsLoading(false)
+      }, 4000);
       },[])
   return !isLoading ? (
 
@@ -49,7 +47,10 @@ function App() {
 ) : 
   <div className='spinner'>
     <HashLoader  loading={isLoading} size={75}/>
-  </div>
+
+</div>
+
+   
 }
 
 export default App;
