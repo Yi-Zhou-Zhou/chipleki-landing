@@ -125,7 +125,7 @@
         position: absolute;
         bottom: 40px;
         left: 15%;
-        transition: opacity 1s;
+        transition: opacity 0.2s;
         font-weight: 550;
       }
 
@@ -139,7 +139,7 @@
         bottom: 0;
         left: 15%;
         font-size: 20px;
-        transition: opacity 1s;
+        transition: opacity 0.2s;
       }
 
   }
@@ -157,7 +157,7 @@
     opacity: 0;
     padding-right: 1rem;
     gap:1rem;
-    transition: opacity 1s ease-in;
+    transition: opacity 0.2s ease-in;
     padding-top: 1rem;
   } 
 
