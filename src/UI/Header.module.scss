@@ -154,7 +154,7 @@
     @include breakpoint(md) {
         position: static;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         background: initial;
         width: auto;
         padding: 0;
