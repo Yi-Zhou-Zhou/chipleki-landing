@@ -41,6 +41,9 @@ const Header = () => {
                         <LinkS className={styles.nav__item} to="more" spy={true} smooth={true} offset={-70} duration={500}>
                             Más información
                         </LinkS>
+                        <LinkS className={styles.nav__item} to="news" spy={true} smooth={true} offset={-70} duration={500}>
+                            Noticias
+                        </LinkS>
                         <LinkR className={styles.nav__item} to="about-us">
                             Nuestro equipo
                         </LinkR>

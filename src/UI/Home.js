@@ -5,6 +5,7 @@ import Functionalities from './Functionalities'
 import Footer from './Footer'
 import {Link as LinkS} from "react-scroll"
 import { Fade } from 'react-awesome-reveal'
+import News from './News'
 const Home = () => {
   return (
     <main  id='home'>
@@ -24,6 +25,7 @@ const Home = () => {
         </Fade>
         <Section/>
         <Functionalities/>
+        <News />
         <Footer/>
     </main>
 
