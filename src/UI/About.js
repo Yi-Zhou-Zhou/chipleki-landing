@@ -3,6 +3,7 @@ import React from 'react'
 import mission from '../imgs/mission.png'
 import vision from '../imgs/vision.png'
 import values from '../imgs/values.png'
+import chipleki from '../imgs/chipleki.png'
 import Footer from './Footer'
 import Team from './Team'
 import { Fade } from 'react-awesome-reveal'
@@ -13,13 +14,18 @@ const About = () => {
     <div className={styles.container}>
       {/* About us Section  */}
         <div className={styles.container__section}>
-            <h2 className={styles.container__section__title}> Acerca de Nosotros</h2>
+            <h2 className={styles.container__section__title}> Acerca de Nosotros </h2>
             <hr/>
         </div>
 
         <div className={styles.container__info} id="nosotros">
-          <div className={styles.container__info__head}>
-            <p >Somos Chipleki, un equipo de estudiantes de la Universidad Técnica Federico Santa María con el objetivo de ayudar a estudiantes con su aprendizaje en el área de la programación y la computación.</p>
+          <div className={styles.container__info__aboutus}>
+            <div className={styles.container__info__aboutus__logo}>
+              <img src={chipleki} alt="Chipleki Logo" />
+            </div>
+            <div className={styles.container__info__aboutus__text}>
+              <p>Somos Chipleki, un equipo de estudiantes de la Universidad Técnica Federico Santa María con el objetivo de ayudar a estudiantes con su aprendizaje en el área de la programación y la computación.</p>
+            </div>
           </div>
 
           <div className={styles.container__info__body}>
