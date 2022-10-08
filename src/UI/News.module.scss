@@ -41,14 +41,35 @@
                 text-align: center;
         }
     }
+}
+
+.social{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    flex-direction: column;
+
+    @include breakpoint(md){
+        flex-direction: row;
+        gap: 5rem;
+    }
 
     &__fb{
         width: 340px;
         height: 500px;
         border: none;
         overflow: hidden;
-        display: block;
-        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+
+    &__ig{
+        width: 340px;
+        height: 500px;
+        border: none;
+        overflow: hidden;
         padding-bottom: 1rem;
     }
 }
