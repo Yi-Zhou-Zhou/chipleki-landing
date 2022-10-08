@@ -6,11 +6,18 @@
     background-size: cover;
     height: 60vh;
     color: white;
-        @include breakpoint(md){
+
+
+    @include breakpoint(md){
         background-repeat: no-repeat;
         padding-left: 3rem;
         background-size: 100%;
         background-position: 60% 70%;
+        height:100vh;
+        width: 100%;
+        &__title{
+            width: 60%;
+        }
     }
 
     overflow:hidden;
@@ -19,15 +26,6 @@
     align-items: center;
     width: 100%;
     gap: 0;
-
-
-    @include breakpoint(md){
-        height:100vh;
-        width: 100%;
-        &__title{
-            width: 60%;
-        }
-    }
 
     &__title{
         font-family: "Lato","sans-serif";
