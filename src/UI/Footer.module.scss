@@ -12,25 +12,65 @@
 }
 
 .container{
-    @include breakpoint(sm) {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
 
+    
+.chipleki{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    width: 100%;
+
+    @include breakpoint(md){
+        flex-direction: row;
+        width: auto;
     }
 
-    &__logo{
-        height: 100%;
-        flex: 1;
+    &__social{
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 1rem;
-        img{
-            width: 150px;
+        justify-content: space-evenly;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        @include breakpoint(md){
+            flex-direction: column;
+            margin-bottom: 0;
+            width: 25%;
+        }
+        a{
+            color: white;
         }
 
-        &__info{    
+    }
+    &__info{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        @include breakpoint(md){
+            width: 75%;
+        }
+
+        &__logo{
+            img{
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+
+        &__text{
             h2{
                 font-weight: 600;
                 font-size: 18px;
@@ -40,39 +80,20 @@
                 font-size: 15px;
             }
         }
-        @include breakpoint(sm) {
-            gap: 1rem;
-            grid-template-columns: repeat(auto-fit, 1fr);
-            img{
-                width: 120px;
-                grid-area: logo;
-            }
-        }   
     }
 }
 
-   
-
-.social__media{
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-
-    @include breakpoint(md){
-        margin-bottom: 0;
-    }
-    a{
-        color: white;
-    }
-}
 
 .uLogo{
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    align-self: center;
-    flex:1.5 ;
-    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    
+    @include breakpoint(md){
+        width: auto;
+    }
+
     img{
         max-height: 70px;
         @include breakpoint(md){
