@@ -33,7 +33,7 @@ const Section = () => {
 					<div className={styles.section__container__video}>
 						<iframe
 							title="YouTube video player"
-							src="https://www.youtube.com/embed/8s1-DCoXErU"
+							src="https://www.youtube.com/embed/HZvstMP99Rw"
 							frameborder="0"
 							height="100%"
 							width="100%"
